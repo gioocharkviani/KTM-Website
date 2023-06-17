@@ -1,0 +1,12 @@
+.logo {
+    width: 100%;
+    background-color: #FF5C00;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    width: 9.375rem;
+    height: 6.25rem;
+}

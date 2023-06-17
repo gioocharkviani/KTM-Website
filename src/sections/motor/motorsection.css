@@ -1,0 +1,132 @@
+.motorsection {
+    width: 100%;
+    position: relative;
+    display: flex;
+    padding: 20px 0;
+    justify-content: center;
+}
+
+.MotorSectioncontent {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.slidelists {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.motorslide {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    cursor: pointer;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+
+
+.slide1img {
+    position: relative;
+}
+
+.slide1img img {
+    width: 100%;
+    height: 2.5rem;
+    object-fit: contain;
+}
+
+.slideinfo1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+    gap: 0.3125rem;
+}
+
+.titslide1 {
+    font-family: 'Sora', sans-serif;
+    font-size: 0.8125rem;
+    color: #000000;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+
+.activemotorslide {
+    color: #FFF;
+    background-color: #ff5e00;
+    animation: animation1 0.8s;
+}
+.activemotorslide .titslide1{
+    color: #FFF;
+}
+
+.motoinfo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e8e8e8;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+.motoprice {
+    font-family: 'Sora', sans-serif;
+    font-size: 0.875rem;
+    cursor: pointer;
+}
+.mototitle {
+    font-family: 'Sora', sans-serif;
+    font-size: 0.875rem;
+    color: #ff5e00;
+}
+
+
+
+
+.motorslideleftside {
+    width: 70%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.motorslidebigimg {
+    width: 100%;
+    position: relative;
+}
+
+
+.visibleImage img {
+    width: 100%;
+    display: inline-block;
+    object-fit: contain;
+}
+
+.HideImage {
+    display: none;
+}
+
+@keyframes animation1 {
+    from {
+        background-color: #ff5e00;
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+

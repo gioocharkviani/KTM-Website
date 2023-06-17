@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  outline: inherit;
+
+}
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Hind&family=Work+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@600&display=swap');
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+
+.main-wraperr {
+  display: flex;
+  justify-content: space-between; 
+  width: 100%;
+  position: relative;
+}
+
+.Right-side {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.ContentWrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+
+/* Responsivy  width 700 px */
+
+@media only screen and (max-width: 700px) {
+  .mainNews  {
+    flex-direction: column;
+  }
+  .section2 {
+    flex-direction: column;
+    gap: 30px;
+    padding-bottom: 30px;
+  }
+
+  .aside {
+    width: 60px;
+  }
+
+  .aside-wrapper {
+    width: 60px;
+  }
+  
+  .navicon {
+    display: flex;
+  }
+  .navLi span {
+    display: none;
+  }
+  .logo  {
+    width: 60px;
+    height: 60px;
+  }
+
+  .logo img {
+    width: 100%;
+    object-fit: contain;
+}
+
+}
+/* Responsivy  width 700 px */

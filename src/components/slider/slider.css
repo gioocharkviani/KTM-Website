@@ -1,0 +1,231 @@
+.Slider {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden
+    }    
+    
+    .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: relative;
+      z-index: 1;
+    }
+
+    .slide {
+      opacity: 0;
+      width: 100%;
+      transition: 0.5s;
+    }
+
+    .active  {
+      opacity: 1;
+      height: 100%;
+      transition: 1s;
+    }
+
+
+
+    .SliderWrapper {
+      width: 100%;
+      height: 100%;
+      position: relative;
+    }
+
+    .slide-content {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      z-index: 10;
+    }
+    
+    
+.NexSlideBtn  {
+      position: absolute;
+      display: flex;
+      top: 50%;
+      left: 90%;
+      outline: none;
+      z-index: 103;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+
+.row2 {
+  position: absolute;
+  transform: translateX(1.5625rem);
+}
+
+.row1 {
+  position: absolute;
+}   
+
+.NexSlideBtn div img {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.NexSlideBtn div img:hover {
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+
+.SliderContent {
+  width: 250px;
+  height: 250px;
+  left:40%;
+  top: 30%;
+  border-top: 0.5rem solid #FF5C00;
+  border-bottom: 0.5rem solid #FF5C00;
+  border-right: 0.5rem solid #FF5C00;
+  position: relative;
+  font-family: 'Hind', sans-serif;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.responiveslideinfo {
+  width: 100%;
+  bottom: 0;
+  position: absolute;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  display: none;
+  z-index: 30;
+  padding: 20px;
+}
+
+
+.res-slide-con-info {
+  color: #FFF;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-family: 'Sora', sans-serif;
+}
+
+
+.ReadMore {
+  height: 2.1875rem;
+  background-color: #FF5C00;
+  width:6.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: -0.5rem;
+  bottom: -2.5rem;
+}
+
+.ReadMoreres button{
+  height: 30px;
+  background-color: #FF5C00;
+  border: none;
+  color: #FFF;
+  width:6.25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  right: -0.5rem;
+  bottom: -2.5rem;
+}
+
+.ReadMore:before{
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  width: 0;
+  height: 0.1875rem;
+  left: 0;
+  bottom: 0;
+  transition: 0.5s;
+}
+
+.ReadMore:hover::before{
+  content: '';
+  display: block;
+  position: absolute;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  height: 0.1875rem;
+  bottom: 0;
+  transition: 0.5s;
+}
+
+
+.ReadMore button {
+  background: none;
+  width: 100%;
+  color: #FFF;
+  font-size: 0.75rem;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+  
+.SliderContentText {
+  position: absolute;
+  width: 21.875rem;
+  height: 9.375rem;
+  left: -12.5rem;
+  font-family: 'Sora', sans-serif;
+  color: #FFF;
+  top: 2.5rem;
+  font-size: 1.875rem;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+
+.SliderContent::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0.5rem;
+  height: 1.25rem;
+  background: #FF5C00;
+}
+
+.SliderContent::after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0.5rem;
+  height: 1.25rem;
+  background: #FF5C00;
+}
+
+@media only screen and (max-width: 700px) { 
+  .SliderContent {
+display: none;
+  }
+  .responiveslideinfo {
+    display: flex;
+  }
+  .NexSlideBtn  {
+    top : 50%;
+    left : 90%;
+    transform: scale(0.5);
+  }
+}
+
+@media only screen and (max-width: 400px) { 
+  .responiveslideinfo {
+    flex-direction: column;
+    align-items: center;
+  }
+  .ReadMoreres {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+}

@@ -1,0 +1,93 @@
+.CONTACTSECTION {
+    width: 100%;
+    height: 100vh;
+    background:#FFF;
+    display: flex;
+    flex-direction: column;
+}
+
+.Subscription {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3125rem;
+}
+
+.Subscription-title h2{
+    color: black;
+    font-family: 'Sora', sans-serif;
+    text-transform: uppercase;
+    font-size: 2.25rem;
+}
+
+.get-news-text {
+    font-family: 'Hind', sans-serif;
+    color: #989898;
+}
+
+.Subscription-input {
+    width: 50%;
+    height: 3.125rem;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    padding: 0 0.625rem;
+    gap: 1.25rem;
+    justify-content: space-between;
+}
+
+.Subscription-input input {
+    width: 100%;
+    background: none;
+    color: #C4C4C4;
+    border: none;
+}
+
+.Subscription-input button {
+    width: 20px;
+    height: 20px;
+    background: url('../../assets//envelope.svg')no-repeat center center;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.Subscription-input button:hover {
+    opacity: 0.5;
+}
+
+.fot-section{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* Responsivy  width 700 px */
+
+@media only screen and (max-width: 700px) {
+    .Subscription-title h2 {
+        font-size: 20px;
+    }
+    .Subscription {
+        padding: 30px 0;
+    }
+    .CONTACTSECTION {
+        height: auto;
+    }
+  }
+  /* Responsivy  width 700 px */
+
+/* Responsivy  width 370px */
+
+@media only screen and (max-width: 370px) {
+    .Subscription-input {
+        width: 90%;
+    }
+  }
+  /* Responsivy  width 370px */

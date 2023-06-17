@@ -1,0 +1,109 @@
+.Footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #0F0F0F;
+}
+
+.footer-container {
+    width: 95%;
+    padding: 2.5rem 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.foter-info {
+    display: flex;
+
+    flex-direction: column;
+    gap: 0.625rem;
+}
+
+.foter-info h2 {
+    color: #FFF;
+    text-transform: uppercase;
+    font-family: 'Sora', sans-serif;
+    font-size: 1.0625rem;
+}
+
+.fot-info-container ul {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3125rem;
+}
+
+.fot-info-container ul li {
+    color: #cecece;
+    font-family: 'Hind', sans-serif;
+    padding: 0.25rem 0;
+    font-size: 0.8125rem;
+}
+
+.fot-info-container ul li a {
+    text-decoration: none;
+    color: #cecece;
+}
+
+.fot-info-container ul li a:hover {
+    color: #FF5C00;
+}
+
+.instagram-container {
+    display: grid;
+    gap: 0.125rem;
+    grid-template-columns: repeat(3 , 1fr);
+}
+
+.instagram-container li {
+    width: 5rem;
+    height: 5rem;
+}
+
+.instagram-container li img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* Responsivy  width 700px */
+
+@media only screen and (max-width: 700px) {
+    .footer-container {
+        display: grid;
+        row-gap: 20px;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: repeat(2 , 1fr);
+    }
+    .foter-info:nth-child(3) {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .foter-info {
+        align-items: center;
+    }
+  }
+  /* Responsivy  width 700px */
+
+  /* Responsivy  width 300px */
+
+@media only screen and (max-width: 300px) {
+    .footer-container {
+        display: grid;
+        row-gap: 20px;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: repeat(1 , 1fr);
+    }
+    .foter-info:nth-child(3) {
+        grid-row-start: inherit;
+        grid-row-end: inherit;
+        grid-column-start: inherit;
+        grid-column-end: inherit;
+    }
+    .foter-info {
+        align-items: flex-start;
+    }
+  }
+  /* Responsivy  width 300px */

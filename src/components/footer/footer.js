@@ -35,12 +35,12 @@ const Footer = () => {
           <h2>instagram</h2>
           <div className='fot-info-container'>
             <div className='instagram-container'>
-              <li><img src='https://transmoto.com.au/wp-content/uploads/2023/01/KTM_Racing_Team_2023_5-1536x1024.jpg' /></li>
-              <li><img src='https://transmoto.com.au/wp-content/uploads/2023/01/KTM_Racing_Team_2023_1-767x411.jpg' /></li>
-              <li><img src='https://transmoto.com.au/wp-content/uploads/2023/01/KTM_Racing_Team_2023_6-1536x1024.jpg' /></li>
-              <li><img src='https://transmoto.com.au/wp-content/uploads/2023/01/KTM_Racing_Team_2023_6-1536x1024.jpg' /></li>
-              <li><img src='https://transmoto.com.au/wp-content/uploads/2023/01/KTM_Racing_Team_2023_6-1536x1024.jpg' /></li>
-              <li><img src='https://transmoto.com.au/wp-content/uploads/2023/01/KTM_Racing_Team_2023_6-1536x1024.jpg' /></li>
+              <li><img src='https://transmoto.com.au/wp-content/uploads/2023/01/KTM_Racing_Team_2023_5-1536x1024.jpg' alt='instagram'/></li>
+              <li><img src='https://transmoto.com.au/wp-content/uploads/2023/01/KTM_Racing_Team_2023_1-767x411.jpg' alt='instagram'/></li>
+              <li><img src='https://transmoto.com.au/wp-content/uploads/2023/01/KTM_Racing_Team_2023_6-1536x1024.jpg' alt='instagram'/></li>
+              <li><img src='https://transmoto.com.au/wp-content/uploads/2023/01/KTM_Racing_Team_2023_6-1536x1024.jpg' alt='instagram'/></li>
+              <li><img src='https://transmoto.com.au/wp-content/uploads/2023/01/KTM_Racing_Team_2023_6-1536x1024.jpg' alt='instagram'/></li>
+              <li><img src='https://transmoto.com.au/wp-content/uploads/2023/01/KTM_Racing_Team_2023_6-1536x1024.jpg' alt='instagram'/></li>
             </div>
           </div>
         </div>

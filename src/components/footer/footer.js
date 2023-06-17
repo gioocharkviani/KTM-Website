@@ -23,10 +23,10 @@ const Footer = () => {
           <h2>about</h2>
           <div className='fot-info-container'>
             <ul>
-              <li><a href='#'>About us</a></li>
-              <li><a href='#'>Dellivery information</a></li>
-              <li><a href='#'>Our store</a></li>
-              <li><a href='#'>Privacy policy</a></li>
+              <li><a href='/'>About us</a></li>
+              <li><a href='/'>Dellivery information</a></li>
+              <li><a href='/'>Our store</a></li>
+              <li><a href='/'>Privacy policy</a></li>
             </ul>
           </div>
         </div>
